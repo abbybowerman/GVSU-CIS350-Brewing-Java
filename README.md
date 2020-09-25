@@ -1,10 +1,10 @@
-# Team Name
+# Brewing Java
 
 Project description (~1 paragraph)
 
 ## Team Members and Roles
 
-* Member 1 (Role 1, Role 2)
+* [Abby Bowerman](https://github.com/abbybowerman/CIS350-HW2-Bowerman)
 * Member 2 (Role 3, Role 4)
 * Member 3 (Role 5, Role 6)
 
