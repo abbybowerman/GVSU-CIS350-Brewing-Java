@@ -6,7 +6,7 @@ Project description (~1 paragraph)
 
 * [Abby Bowerman](https://github.com/abbybowerman/CIS350-HW2-Bowerman)
 * Member 2 (Role 3, Role 4)
-* Member 3 (Role 5, Role 6)
+* [Kaitlyn Starkey](https://github.com/kaitlynst1002/CIS350-HW2-Starkey)
 
 ## Prerequisites
 
