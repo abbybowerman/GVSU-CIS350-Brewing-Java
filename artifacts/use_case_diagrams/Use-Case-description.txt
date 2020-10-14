@@ -1,0 +1,9 @@
+Use case: User home page
+
+Actors: Registered user, new user
+
+Description: Registered user must login with correct username and password. The new user would have to create an account with a valid username and pasword. They must fulfill these requirements before accessing their home page.
+
+Cross Ref.: Requirement the user shall be brought to their personal home screen upon login and shall require a username and password with each login from the login menu feature.
+
+Use-cases: The registered user must have completed the log in use case. The new user must have completed the create account use case. 
