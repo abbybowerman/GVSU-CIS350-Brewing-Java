@@ -26,7 +26,7 @@ import com.brewingjava.categoriesinfinity.R;
 import com.brewingjava.categoriesinfinity.ui.login.LoginViewModel;
 import com.brewingjava.categoriesinfinity.ui.login.LoginViewModelFactory;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginScreen extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
 

@@ -26,6 +26,7 @@
         android:layout_marginBottom="215dp"
         android:text="@android:string/cancel"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:onClick="returnToLogin"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
