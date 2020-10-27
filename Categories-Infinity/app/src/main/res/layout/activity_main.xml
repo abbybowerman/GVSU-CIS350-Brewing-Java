@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2E92E1"
+    android:background="#7352C5"
     android:minWidth="20dp"
     android:visibility="visible"
     tools:context=".MainActivity">
@@ -15,12 +15,10 @@
         android:layout_height="60dp"
         android:layout_marginTop="17dp"
         android:background="#B4333232"
-        app:layout_constraintBottom_toTopOf="@+id/divider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/headerText"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/headerText" />
 
     <TextView
         android:id="@+id/headerText"
@@ -31,7 +29,7 @@
         android:layout_marginTop="36dp"
         android:layout_marginEnd="148dp"
         android:layout_marginRight="148dp"
-        android:background="#2E92E1"
+        android:background="#7352C5"
         android:fontFamily="serif"
         android:shadowColor="#020101"
         android:text="@string/categories_infinity"
@@ -69,10 +67,9 @@
         android:id="@+id/divider"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginTop="368dp"
         android:background="#B4333232"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+        tools:layout_editor_absoluteY="384dp" />
 
     <TextView
         android:id="@+id/HowToPlay"
@@ -82,14 +79,13 @@
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="236dp"
         android:layout_marginRight="236dp"
-        android:layout_marginBottom="380dp"
-        android:text="@string/textview"
+        android:text="@string/how_to_play"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/divider"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.98"
         app:layout_constraintStart_toEndOf="@+id/divider2"
+        tools:layout_editor_absoluteY="103dp"
         tools:text="How to Play!" />
 
     <TextView
@@ -98,7 +94,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="380dp"
+        android:layout_marginTop="240dp"
         android:text="@string/activity"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
@@ -117,14 +113,13 @@
         app:srcCompat="@drawable/ic_home_black_24dp" />
 
     <ImageView
-        android:id="@+id/Profile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="107dp"
-        android:layout_marginRight="107dp"
-        android:contentDescription="@string/profile"
-        app:layout_constraintBottom_toTopOf="@+id/ProfileText"
+        android:id="@+id/imageView2"
+        android:layout_width="55dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginRight="104dp"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:srcCompat="@android:mipmap/sym_def_app_icon" />
+        app:srcCompat="@drawable/profile"
+        tools:layout_editor_absoluteY="634dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
