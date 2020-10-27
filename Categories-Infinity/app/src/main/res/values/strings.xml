@@ -35,4 +35,6 @@
     <string name="textview">TextView</string>
     <string name="activity">Activity</string>
     <string name="progress">Progress</string>
+    <string name="Profile">Profile</string>
+    <string name="profile">Profile</string>
 </resources>
