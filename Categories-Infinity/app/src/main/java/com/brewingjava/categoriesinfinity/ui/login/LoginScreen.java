@@ -22,6 +22,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.brewingjava.categoriesinfinity.MainActivity;
 import com.brewingjava.categoriesinfinity.R;
 import com.brewingjava.categoriesinfinity.SignUp;
 import com.brewingjava.categoriesinfinity.ui.login.LoginViewModel;
@@ -134,5 +135,19 @@ public class LoginScreen extends AppCompatActivity {
     public void goToSignUp(View view){
         Intent intent = new Intent(this, SignUp.class);
         startActivity(intent);
+    }
+
+    public void loginToHome(View view){
+        //TODO add authentication from database
+        EditText username = (EditText) findViewById(R.id.username);
+        EditText password = (EditText) findViewById(R.id.password);
+
+        //currently just checks if username and password are long enough but
+        //not registered user
+        if(username.getText().toString().length() > 0 && password.getText().toString().length() >= 8){
+            //send to home screen
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+        }
     }
 }
