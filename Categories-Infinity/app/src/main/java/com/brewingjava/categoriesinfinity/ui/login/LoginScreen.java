@@ -23,8 +23,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.brewingjava.categoriesinfinity.R;
+import com.brewingjava.categoriesinfinity.SignUp;
 import com.brewingjava.categoriesinfinity.ui.login.LoginViewModel;
 import com.brewingjava.categoriesinfinity.ui.login.LoginViewModelFactory;
+import android.content.Intent;
 
 public class LoginScreen extends AppCompatActivity {
 
@@ -127,5 +129,10 @@ public class LoginScreen extends AppCompatActivity {
 
     private void showLoginFailed(@StringRes Integer errorString) {
         Toast.makeText(getApplicationContext(), errorString, Toast.LENGTH_SHORT).show();
+    }
+
+    public void goToSignUp(View view){
+        Intent intent = new Intent(this, SignUp.class);
+        startActivity(intent);
     }
 }
