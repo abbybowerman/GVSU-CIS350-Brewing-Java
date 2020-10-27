@@ -37,7 +37,7 @@ public class SignUp extends AppCompatActivity {
         boolean containsSpecialCharacter = matchSpecialCharacter.find();
 
         //Verify password
-        if(password.toString().length() >= 8 && containsLetter && containsNumber
+        if(password.getText().toString().length() >= 8 && containsLetter && containsNumber
                 && containsSpecialCharacter && username.getText().toString().length() > 0){
             if(password.getText().toString().equals(passwordVerify.getText().toString())){
                 //send to home screen
@@ -49,10 +49,12 @@ public class SignUp extends AppCompatActivity {
                 passwordVerify.setHint("Passwords must match");
             }
         }
+        //TODO add else statement
     }
 
-    public void backToLogin(View view){
+    //Would be for cancel button if added again
+    /*public void backToLogin(View view){
         View signup = findViewById(R.id.signUpView);
         ((ViewGroup)signup.getParent()).removeView(signup);
-    }
+    }*/
 }
