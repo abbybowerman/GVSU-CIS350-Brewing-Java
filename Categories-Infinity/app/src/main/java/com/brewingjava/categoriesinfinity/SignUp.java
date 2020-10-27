@@ -4,7 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.service.autofill.FieldClassification;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class SignUp extends AppCompatActivity {
 
@@ -14,10 +19,40 @@ public class SignUp extends AppCompatActivity {
         setContentView(R.layout.activity_sign_up);
     }
 
-    /*View.OnClickListener onClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            startActivity(new Intent(this, MainActivity.class));
+    public void signUpToMain(View view){
+        EditText username = (EditText) findViewById(R.id.usernameText);
+        EditText password = (EditText) findViewById(R.id.passwordTextEnter);
+        EditText passwordVerify = (EditText) findViewById(R.id.passwordTextVerify);
+
+        Pattern letters = Pattern.compile("[a-zA-Z]");
+        Pattern numbers = Pattern.compile("[0-9]");
+        Pattern specialCharacters = Pattern.compile("[^a-zA-Z0-9]");
+
+        Matcher matchLetter = letters.matcher(password.getText().toString());
+        Matcher matchNumber = numbers.matcher(password.getText().toString());
+        Matcher matchSpecialCharacter = specialCharacters.matcher(password.getText().toString());
+
+        boolean containsLetter = matchLetter.find();
+        boolean containsNumber = matchNumber.find();
+        boolean containsSpecialCharacter = matchSpecialCharacter.find();
+
+        //Verify password
+        if(password.toString().length() >= 8 && containsLetter && containsNumber
+                && containsSpecialCharacter && username.getText().toString().length() > 0){
+            if(password.getText().toString().equals(passwordVerify.getText().toString())){
+                //send to home screen
+                Intent intent = new Intent(this, MainActivity.class);
+                startActivity(intent);
+            }else{
+                //tell user passwords must match
+                passwordVerify.setText("");
+                passwordVerify.setHint("Passwords must match");
+            }
         }
-    }*/
+    }
+
+    public void backToLogin(View view){
+        View signup = findViewById(R.id.signUpView);
+        ((ViewGroup)signup.getParent()).removeView(signup);
+    }
 }

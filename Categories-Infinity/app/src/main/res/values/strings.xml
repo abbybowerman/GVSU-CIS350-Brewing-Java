@@ -25,14 +25,15 @@
     <string name="home">Home</string>
     <string name="profile">Profile</string>
     <string name="search">Search</string>
-    <string name="search">Search</string>
+
     <string name="todo">TODO</string>
     <string name="categories_infinity">Categories Infinity</string>
     <string name="how_to_play">How to Play!</string>
-    <string name="categories_infinity">Categories Infinity</string>
+
     <string name="activity">Activity</string>
     <string name="textview">TextView</string>
-    <string name="textview">TextView</string>
-    <string name="activity">Activity</string>
+
     <string name="progress">Progress</string>
+    <string name="Profile">Profile</string>
+
 </resources>
