@@ -25,20 +25,24 @@ public class SignUp extends AppCompatActivity {
         EditText passwordVerify = (EditText) findViewById(R.id.passwordTextVerify);
 
         Pattern letters = Pattern.compile("[a-zA-Z]");
+        Pattern uppercase = Pattern.compile("[A-Z]");
         Pattern numbers = Pattern.compile("[0-9]");
         Pattern specialCharacters = Pattern.compile("[^a-zA-Z0-9]");
 
         Matcher matchLetter = letters.matcher(password.getText().toString());
+        Matcher matchUppercase = uppercase.matcher((password.getText().toString()));
         Matcher matchNumber = numbers.matcher(password.getText().toString());
         Matcher matchSpecialCharacter = specialCharacters.matcher(password.getText().toString());
 
         boolean containsLetter = matchLetter.find();
+        boolean containsUppercase = matchUppercase.find();
         boolean containsNumber = matchNumber.find();
         boolean containsSpecialCharacter = matchSpecialCharacter.find();
 
         //Verify password
         if(password.getText().toString().length() >= 8 && containsLetter && containsNumber
-                && containsSpecialCharacter && username.getText().toString().length() > 0){
+                && containsSpecialCharacter && containsUppercase &&
+                username.getText().toString().length() > 0){
             if(password.getText().toString().equals(passwordVerify.getText().toString())){
                 //send to home screen
                 Intent intent = new Intent(this, MainActivity.class);
