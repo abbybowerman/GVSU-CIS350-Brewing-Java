@@ -4,18 +4,4 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".profile">
-
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appBarLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay"/>
-
-    <View
-        android:id="@+id/divider3"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="?android:attr/listDivider" />
-
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+    tools:context=".profile"/>
