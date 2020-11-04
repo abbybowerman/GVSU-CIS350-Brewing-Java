@@ -23,7 +23,6 @@
     <string name="home">Home</string>
     <string name="search">Search</string>
 
-    <string name="todo">TODO</string>
     <string name="categories_infinity">Categories Infinity</string>
     <string name="how_to_play">How to Play!</string>
 
@@ -52,5 +51,6 @@
     <string name="profile">Profile</string>
     <string name="multiautocompletetextview">MultiAutoCompleteTextView</string>
     <string name="login_failed" />
+    <string name="todo">TODO</string>
 
 </resources>

@@ -101,15 +101,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@android:mipmap/sym_def_app_icon"
         android:focusable="true"
-        android:contentDescription="TODO" />
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/Profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="185dp"
+        android:layout_marginLeft="185dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/profile"
-        tools:layout_editor_absoluteX="185dp"
-        tools:layout_editor_absoluteY="696dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <MultiAutoCompleteTextView
         android:id="@+id/EnterUsername"
@@ -118,7 +121,7 @@
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
         android:layout_marginBottom="6dp"
-        android:text="@string/multiautocompletetextview"
+        android:text="Enter a Username"
         app:layout_constraintBottom_toBottomOf="@+id/divider2"
         app:layout_constraintEnd_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="@+id/divider2"
