@@ -45,10 +45,13 @@ public class SignUp extends AppCompatActivity {
                 username.getText().toString().length() > 0){
             if(password.getText().toString().equals(passwordVerify.getText().toString())){
                 //send to home screen
-                Intent intent = new Intent(this, MainActivity.class);
+                //TODO map username to username+@categoriesinfinity.com
+                String emailUsername = username.toString() + "@categoriesinfinity.com";
+                Intent intent = new Intent(SignUp.this, MainActivity.class);
                 startActivity(intent);
             }else{
                 //tell user passwords must match
+                //TODO add more descriptive errors
                 passwordVerify.setText("");
                 passwordVerify.setHint("Passwords must match");
             }

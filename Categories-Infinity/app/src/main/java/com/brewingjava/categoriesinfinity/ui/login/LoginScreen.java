@@ -146,7 +146,9 @@ public class LoginScreen extends AppCompatActivity {
         //not registered user
         if(username.getText().toString().length() > 0 && password.getText().toString().length() >= 8){
             //send to home screen
-            Intent intent = new Intent(this, MainActivity.class);
+            //TODO map username to username+@categoriesinfinity.com
+            String emailUsername = username.toString() + "@categoriesinfinity.com";
+            Intent intent = new Intent(LoginScreen.this, MainActivity.class);
             startActivity(intent);
         }
     }
