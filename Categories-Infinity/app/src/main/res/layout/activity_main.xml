@@ -112,14 +112,16 @@
         tools:layout_editor_absoluteY="696dp" />
 
     <MultiAutoCompleteTextView
-        android:id="@+id/multiAutoCompleteTextView2"
+        android:id="@+id/EnterUsername"
         android:layout_width="248dp"
         android:layout_height="54dp"
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
+        android:layout_marginBottom="6dp"
         android:text="@string/multiautocompletetextview"
+        app:layout_constraintBottom_toBottomOf="@+id/divider2"
         app:layout_constraintEnd_toEndOf="@+id/divider2"
-        tools:layout_editor_absoluteY="83dp"
+        app:layout_constraintTop_toTopOf="@+id/divider2"
         tools:text="Enter a username" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
