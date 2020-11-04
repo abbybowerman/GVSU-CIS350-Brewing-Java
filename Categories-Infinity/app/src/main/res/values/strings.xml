@@ -48,8 +48,7 @@
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="homebutton">HomeButton</string>
-    <string name="profile">Profile</string>
-    <string name="multiautocompletetextview">MultiAutoCompleteTextView</string>
+       <string name="multiautocompletetextview">MultiAutoCompleteTextView</string>
     <string name="login_failed" />
     <string name="todo">TODO</string>
     <string name="enter_a_username">Enter a Username</string>

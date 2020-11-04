@@ -18,6 +18,5 @@ public class MainActivity extends AppCompatActivity {
     public void profilePage(View view) {
         Intent intent = new Intent(this, Profile.class);
         startActivity(intent);
-
     }
 }
