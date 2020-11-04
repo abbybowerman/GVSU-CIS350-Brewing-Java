@@ -60,8 +60,7 @@ public class SignUp extends AppCompatActivity {
     }
 
     //Would be for cancel button if added again
-    /*public void backToLogin(View view){
-        View signup = findViewById(R.id.signUpView);
-        ((ViewGroup)signup.getParent()).removeView(signup);
-    }*/
+    public void backToLogin(View view){
+        finish();
+    }
 }
