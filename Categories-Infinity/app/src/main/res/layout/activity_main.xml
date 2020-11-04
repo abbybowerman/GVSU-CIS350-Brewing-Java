@@ -11,6 +11,19 @@
     android:visibility="visible"
     tools:context=".MainActivity">
 
+    <EditText
+        android:id="@+id/usernameText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginLeft="144dp"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:hint="Enter username"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <View
         android:id="@+id/divider2"
         android:layout_width="wrap_content"
@@ -90,20 +103,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/divider" />
-
-    <MultiAutoCompleteTextView
-        android:id="@+id/EnterUsername"
-        android:layout_width="248dp"
-        android:layout_height="54dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
-        android:layout_marginBottom="6dp"
-        android:importantForAccessibility="no"
-        android:text="@string/enter_a_username"
-        app:layout_constraintBottom_toBottomOf="@+id/divider2"
-        app:layout_constraintEnd_toEndOf="@+id/divider2"
-        app:layout_constraintTop_toTopOf="@+id/divider2"
-        tools:text="Enter a username" />
 
     <Button
         android:id="@+id/profile"
