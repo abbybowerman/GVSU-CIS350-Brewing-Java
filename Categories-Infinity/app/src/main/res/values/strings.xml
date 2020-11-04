@@ -52,5 +52,6 @@
     <string name="login_failed" />
     <string name="todo">TODO</string>
     <string name="enter_a_username">Enter a Username</string>
+    <string name="change_password">Change Password</string>
 
 </resources>
