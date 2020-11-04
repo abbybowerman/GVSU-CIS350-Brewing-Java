@@ -11,12 +11,12 @@
 
     <View
         android:id="@+id/divider2"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="60dp"
-        android:layout_marginTop="17dp"
+        android:layout_marginTop="8dp"
         android:background="#B4333232"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/headerText" />
 
@@ -51,7 +51,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/HowToPlay"
+        android:id="@+id/Search"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
@@ -68,7 +68,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/divider2"
-        tools:text="How to Play!" />
+        tools:text="Search:" />
 
     <TextView
         android:id="@+id/Activity"
@@ -90,46 +90,36 @@
         app:layout_constraintTop_toTopOf="@+id/divider" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginBottom="38dp"
-        android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ic_home_black_24dp" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="100dp"
-        android:layout_marginRight="100dp"
-        android:layout_marginBottom="38dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginRight="176dp"
+        android:layout_marginBottom="40dp"
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@android:mipmap/sym_def_app_icon" />
-
-    <TextView
-        android:id="@+id/Home"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="112dp"
-        android:layout_marginLeft="112dp"
-        android:layout_marginBottom="16dp"
-        android:text="Home"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:srcCompat="@android:mipmap/sym_def_app_icon"
+        android:focusable="true"
+        android:contentDescription="TODO" />
 
     <TextView
         android:id="@+id/Profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Profile"
-        tools:layout_editor_absoluteX="259dp"
-        tools:layout_editor_absoluteY="697dp" />
+        android:text="@string/profile"
+        tools:layout_editor_absoluteX="185dp"
+        tools:layout_editor_absoluteY="696dp" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/multiAutoCompleteTextView2"
+        android:layout_width="248dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:text="@string/multiautocompletetextview"
+        app:layout_constraintEnd_toEndOf="@+id/divider2"
+        tools:layout_editor_absoluteY="83dp"
+        tools:text="Enter a username" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
