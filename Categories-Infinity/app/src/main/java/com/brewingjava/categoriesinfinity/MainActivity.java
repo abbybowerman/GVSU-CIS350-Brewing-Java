@@ -1,6 +1,5 @@
 package com.brewingjava.categoriesinfinity;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -16,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void profilePage(View view) {
-        Intent intent = new Intent(this, Profile.class);
+        Intent intent = new Intent(this, ProfileActivity.class);
         startActivity(intent);
     }
 }

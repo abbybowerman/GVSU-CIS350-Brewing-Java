@@ -1,5 +1,6 @@
 package com.brewingjava.categoriesinfinity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -10,7 +11,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
 
-public class Profile extends AppCompatActivity {
+public class ProfileActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,5 +28,10 @@ public class Profile extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+    }
+
+    public void profilePage(View view){
+       Intent intent = new Intent(this, ProfileActivity.class);
+       startActivity(intent);
     }
 }

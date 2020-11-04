@@ -26,7 +26,7 @@ import com.brewingjava.categoriesinfinity.R;
 import com.brewingjava.categoriesinfinity.ui.login.LoginViewModel;
 import com.brewingjava.categoriesinfinity.ui.login.LoginViewModelFactory;
 
-public class LoginActivity extends AppCompatActivity {
+public class ProfileActivity extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
 
@@ -45,8 +45,7 @@ public class LoginActivity extends AppCompatActivity {
         loginViewModel.getLoginFormState().observe(this, new Observer<LoginFormState>() {
             @Override
             public void onChanged(@Nullable LoginFormState loginFormState) {
-                if (loginFormState == null) {
-                    return;
+                if (loginFormState == null) {                 return;
                 }
                 loginButton.setEnabled(loginFormState.isDataValid());
                 if (loginFormState.getUsernameError() != null) {
