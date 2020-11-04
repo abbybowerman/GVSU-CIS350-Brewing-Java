@@ -10,9 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".ui.login.ProfileActivity"
+            android:label="@string/title_activity_profile"></activity>
+        <activity
+            android:name=".profile2"
+            android:label="@string/title_activity_profile2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".Profile"
             android:label="@string/title_activity_profile"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity" />
         <activity
             android:name=".SignUp"
