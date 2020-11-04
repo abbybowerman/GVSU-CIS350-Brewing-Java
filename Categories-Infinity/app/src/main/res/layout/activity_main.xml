@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="#7352C5"
     android:minWidth="20dp"
+    android:onClick="profilePage"
     android:visibility="visible"
     tools:context=".MainActivity">
 
@@ -90,18 +91,19 @@
         app:layout_constraintTop_toTopOf="@+id/divider" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton5"
+        android:id="@+id/profileButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="176dp"
         android:layout_marginRight="176dp"
         android:layout_marginBottom="40dp"
         android:clickable="true"
+        android:contentDescription="@string/todo"
+        android:focusable="true"
+        android:onClick="@string/Profile"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@android:mipmap/sym_def_app_icon"
-        android:focusable="true"
-        android:contentDescription="@string/todo" />
+        app:srcCompat="@android:mipmap/sym_def_app_icon" />
 
     <TextView
         android:id="@+id/Profile"
@@ -121,7 +123,7 @@
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
         android:layout_marginBottom="6dp"
-        android:text="Enter a Username"
+        android:text="@string/enter_a_username"
         app:layout_constraintBottom_toBottomOf="@+id/divider2"
         app:layout_constraintEnd_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="@+id/divider2"
