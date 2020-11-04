@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "353683299610",
+    "firebase_url": "https://cis350-project-92f74.firebaseio.com",
+    "project_id": "cis350-project-92f74",
+    "storage_bucket": "cis350-project-92f74.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353683299610:android:4238556e704f6795bca0a3",
+        "android_client_info": {
+          "package_name": "com.brewingjava.categoriesinfinity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "353683299610-9fh9lvkdluj1m10l3c56fgd7opgs64pr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCv8L1jplT9W0sbq-U1SoKNuGJDYC7jXcI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "353683299610-9fh9lvkdluj1m10l3c56fgd7opgs64pr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
