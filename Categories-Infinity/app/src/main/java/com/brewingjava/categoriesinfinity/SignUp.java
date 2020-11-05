@@ -1,22 +1,42 @@
 package com.brewingjava.categoriesinfinity;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.service.autofill.FieldClassification;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.*;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class SignUp extends AppCompatActivity {
 
+    private FirebaseAuth mAuth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
+        mAuth = FirebaseAuth.getInstance();
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+       // updateUI(currentUser);
     }
 
     public void signUpToMain(View view){
@@ -46,14 +66,44 @@ public class SignUp extends AppCompatActivity {
             if(password.getText().toString().equals(passwordVerify.getText().toString())){
                 //send to home screen
                 //TODO map username to username+@categoriesinfinity.com
-                String emailUsername = username.toString() + "@categoriesinfinity.com";
-                Intent intent = new Intent(SignUp.this, MainActivity.class);
-                startActivity(intent);
+                String emailUsername = username.getText().toString() + "@categoriesinfinity.com";
+                //Taken from https://firebase.google.com/docs/auth/android/password-auth
+                mAuth.createUserWithEmailAndPassword(emailUsername, password.getText().toString())
+                        .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                if (task.isSuccessful()) {
+                                    // Sign in success, update UI with the signed-in user's information
+                                    Log.d("UsernamePassword", "createUserWithEmail:success");
+                                    FirebaseUser user = mAuth.getCurrentUser();
+                                    Intent intent = new Intent(SignUp.this, MainActivity.class);
+                                    startActivity(intent);
+                                    //updateUI(user);
+                                } else {
+                                    // If sign in fails, display a message to the user.
+                                    Log.w("UsernamePassword", "createUserWithEmail:failure", task.getException());
+                                    Toast.makeText(SignUp.this, "Authentication failed. Choose different username",
+                                            Toast.LENGTH_SHORT).show();
+                                    //updateUI(null);
+                                }
+
+                                // ...
+                            }
+                        });
             }else{
                 //tell user passwords must match
                 //TODO add more descriptive errors
-                passwordVerify.setText("");
-                passwordVerify.setHint("Passwords must match");
+                Toast.makeText(SignUp.this, "Passwords must match",
+                        Toast.LENGTH_SHORT).show();
+            }
+
+        }else{
+            if(username.getText().length() == 0){
+                Toast.makeText(SignUp.this, "Username must be at least 1 character",
+                        Toast.LENGTH_SHORT).show();
+            }else{
+                Toast.makeText(SignUp.this, "Password must contain 1 uppercase, 1 letter, 1 number and 1 special character",
+                        Toast.LENGTH_SHORT).show();
             }
         }
         //TODO add else statement
