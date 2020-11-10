@@ -54,5 +54,8 @@
     <string name="enter_a_username">Enter a Username</string>
     <string name="change_password">Change Password</string>
     <string name="title_activity_profile2">profile2</string>
+    <string name="enter_username">Enter username</string>
+    <string name="name">Name:</string>
+    <string name="profileimage">profileImage</string>
 
 </resources>
