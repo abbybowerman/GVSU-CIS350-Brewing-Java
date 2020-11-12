@@ -66,7 +66,7 @@
         android:id="@+id/changeEmail"
         android:layout_width="99dp"
         android:layout_height="48dp"
-        android:text="Change"
+        android:text="@string/change"
         tools:layout_editor_absoluteX="36dp"
         tools:layout_editor_absoluteY="266dp" />
 
@@ -74,7 +74,7 @@
         android:id="@+id/email"
         android:layout_width="77dp"
         android:layout_height="32dp"
-        android:text="Email:"
+        android:text="@string/email"
         android:textSize="18sp"
         tools:layout_editor_absoluteX="36dp"
         tools:layout_editor_absoluteY="322dp" />
@@ -106,7 +106,7 @@
         android:id="@+id/textUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Username:"
+        android:text="@string/username"
         android:textSize="18sp"
         tools:layout_editor_absoluteX="37dp"
         tools:layout_editor_absoluteY="639dp" />
@@ -118,7 +118,8 @@
         android:ems="10"
         android:inputType="textEmailAddress"
         tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="310dp" />
+        tools:layout_editor_absoluteY="310dp"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"

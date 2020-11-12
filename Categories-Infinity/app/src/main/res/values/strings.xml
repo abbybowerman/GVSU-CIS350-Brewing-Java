@@ -57,5 +57,8 @@
     <string name="enter_username">Enter username</string>
     <string name="name">Name:</string>
     <string name="profileimage">profileImage</string>
+    <string name="email">Email:</string>
+    <string name="username">Username:</string>
+    <string name="change">Change</string>
 
 </resources>
