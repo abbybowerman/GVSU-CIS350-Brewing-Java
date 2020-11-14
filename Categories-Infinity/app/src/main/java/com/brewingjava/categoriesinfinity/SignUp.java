@@ -65,7 +65,6 @@ public class SignUp extends AppCompatActivity {
                 username.getText().toString().length() > 0){
             if(password.getText().toString().equals(passwordVerify.getText().toString())){
                 //send to home screen
-                //TODO map username to username+@categoriesinfinity.com
                 String emailUsername = username.getText().toString() + "@categoriesinfinity.com";
                 //Taken from https://firebase.google.com/docs/auth/android/password-auth
                 mAuth.createUserWithEmailAndPassword(emailUsername, password.getText().toString())
@@ -78,6 +77,7 @@ public class SignUp extends AppCompatActivity {
                                     FirebaseUser user = mAuth.getCurrentUser();
                                     Intent intent = new Intent(SignUp.this, MainActivity.class);
                                     startActivity(intent);
+                                    finish();
                                     //updateUI(user);
                                 } else {
                                     // If sign in fails, display a message to the user.
@@ -109,7 +109,7 @@ public class SignUp extends AppCompatActivity {
         //TODO add else statement
     }
 
-    //Would be for cancel button if added again
+    //Cancel button
     public void backToLogin(View view){
         finish();
     }

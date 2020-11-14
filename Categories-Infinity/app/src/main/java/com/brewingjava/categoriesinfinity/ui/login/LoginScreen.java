@@ -157,8 +157,8 @@ public class LoginScreen extends AppCompatActivity {
 
     public void loginToHome(View view){
         //TODO add authentication from database
-        EditText username = (EditText) findViewById(R.id.username);
-        EditText password = (EditText) findViewById(R.id.password);
+        final EditText username = (EditText) findViewById(R.id.username);
+        final EditText password = (EditText) findViewById(R.id.password);
 
         String emailUsername = username.getText().toString() + "@categoriesinfinity.com";
 
