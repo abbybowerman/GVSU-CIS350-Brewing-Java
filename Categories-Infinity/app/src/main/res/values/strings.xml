@@ -60,5 +60,10 @@
     <string name="email">Email:</string>
     <string name="username">Username:</string>
     <string name="change">Change</string>
+    <string name="change">Change</string>
+    <string name="change">Change</string>
+    <string name="UserName">/@UserName</string>
+    <string name="profileim">ProfileIm</string>
+    <string name="password">Password:</string>
 
 </resources>
