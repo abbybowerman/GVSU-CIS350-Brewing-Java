@@ -9,6 +9,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.brewingjava.categoriesinfinity.GameActivity;
+import com.brewingjava.categoriesinfinity.ProfileActivity;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,6 +23,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void profilePage(View view) {
         Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+        startActivity(intent);
+    }
+
+    public void gamePage(View view){
+        Intent intent = new Intent(MainActivity.this, GameActivity.class);
         startActivity(intent);
     }
 
