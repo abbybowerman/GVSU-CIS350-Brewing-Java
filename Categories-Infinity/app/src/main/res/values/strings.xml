@@ -63,5 +63,8 @@
     <string name="UserName">/@UserName</string>
     <string name="profileim">ProfileIm</string>
     <string name="password">Password:</string>
+    <string name="left">Left</string>
+    <string name="right">Right</string>
+    <string name="option_display">Option Display</string>
 
 </resources>
