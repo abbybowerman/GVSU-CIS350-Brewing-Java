@@ -15,6 +15,8 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
+    private View view;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void gamePage(View view){
-        Intent intent = new Intent(MainActivity.this, GameActivity.class);
-        startActivity(intent);
+    public void gamePlay(View view) {
+        Intent intent2 = new Intent(MainActivity.this, GameActivity.class);
+        startActivity(intent2);
     }
 
     /** Displays menu for logout button */
