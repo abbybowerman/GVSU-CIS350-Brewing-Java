@@ -77,11 +77,13 @@ public class SignUp extends AppCompatActivity {
                                 if (task.isSuccessful()) {
                                     // Sign in success, update UI with the signed-in user's information
                                     Log.d("UsernamePassword", "createUserWithEmail:success");
+
                                     FirebaseUser user = mAuth.getCurrentUser();
                                     String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
                                     mDatabase = FirebaseDatabase.getInstance().getReference();
                                     mDatabase.child("users").child(userId).child("username").setValue(username.getText().toString());
                                     mDatabase.child("users").child(userId).child("gamesPlayed").setValue(0);
+
                                     Intent intent = new Intent(SignUp.this, MainActivity.class);
                                     startActivity(intent);
                                     finish();
