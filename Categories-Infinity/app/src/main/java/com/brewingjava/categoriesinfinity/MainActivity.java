@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mDatabase = FirebaseDatabase.getInstance().getReference();
+        String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
+       // mDatabase.child("users").child(userId).child("gamesPlayed").getValue();
     }
 
     public void profilePage(View view) {
@@ -33,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void gamePlay(View view) {
-        Intent intent2 = new Intent(MainActivity.this, GameActivity.class);
-        startActivity(intent2);
+        Intent intent = new Intent(MainActivity.this, GameActivity.class);
+        startActivity(intent);
     }
 
     /** Displays menu for logout button */

@@ -16,6 +16,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -23,6 +25,7 @@ import java.util.regex.Pattern;
 public class SignUp extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
+    private DatabaseReference mDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +43,7 @@ public class SignUp extends AppCompatActivity {
     }
 
     public void signUpToMain(View view){
-        EditText username = (EditText) findViewById(R.id.usernameText);
+        final EditText username = (EditText) findViewById(R.id.usernameText);
         EditText password = (EditText) findViewById(R.id.passwordTextEnter);
         EditText passwordVerify = (EditText) findViewById(R.id.passwordTextVerify);
 
@@ -75,6 +78,10 @@ public class SignUp extends AppCompatActivity {
                                     // Sign in success, update UI with the signed-in user's information
                                     Log.d("UsernamePassword", "createUserWithEmail:success");
                                     FirebaseUser user = mAuth.getCurrentUser();
+                                    String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
+                                    mDatabase = FirebaseDatabase.getInstance().getReference();
+                                    mDatabase.child("users").child(userId).child("username").setValue(username.getText().toString());
+                                    mDatabase.child("users").child(userId).child("gamesPlayed").setValue(0);
                                     Intent intent = new Intent(SignUp.this, MainActivity.class);
                                     startActivity(intent);
                                     finish();
@@ -106,7 +113,6 @@ public class SignUp extends AppCompatActivity {
                         Toast.LENGTH_SHORT).show();
             }
         }
-        //TODO add else statement
     }
 
     //Cancel button
