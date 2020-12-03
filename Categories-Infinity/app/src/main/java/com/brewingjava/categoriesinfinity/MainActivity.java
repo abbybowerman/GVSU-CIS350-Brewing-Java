@@ -2,12 +2,16 @@ package com.brewingjava.categoriesinfinity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -22,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     private View view;
     private DatabaseReference mDatabase;
+    private static ArrayList<String> usernames = new ArrayList<String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
         DatabaseReference numGamesPlayedRef = mDatabase.child("users").child(userId).child("gamesPlayed");
         DatabaseReference usernamesRef = mDatabase.child("users");
         //final String[] numGames = {"0"};
-        final ArrayList<String> usernames = new ArrayList<String>();
 
         numGamesPlayedRef.addValueEventListener(new ValueEventListener() {
             @Override
@@ -75,6 +79,39 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        final Button searchButton = findViewById(R.id.searchButton);
+        searchButton.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
+            public void onClick(View v) {
+                EditText userField = findViewById(R.id.usernameText);
+                TextView result = findViewById(R.id.searchResult);
+                if(userField.getText().toString().length() != 0){
+                    if(search(usernames, userField.getText().toString())){
+                        result.setText(userField.getText().toString() + " has been found");
+                    }else{
+                        result.setText(userField.getText().toString() + " has not been found");
+                    }
+                }else{
+                    result.setText("Please enter a valid username to search");
+                }
+            }
+        });
+        
+
+    }
+
+    public void clearResult(View view){
+        TextView result = findViewById(R.id.searchResult);
+        result.setText("");
+    }
+
+    public boolean search(ArrayList<String> arr, String enteredUser){
+        for(String user : arr){
+            if(enteredUser.equals(user)){
+                return true;
+            }
+        }
+        return false;
     }
 
     public void profilePage(View view) {
