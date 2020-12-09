@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         DatabaseReference numGamesPlayedRef = mDatabase.child("users").child(userId).child("gamesPlayed");
         DatabaseReference usernamesRef = mDatabase.child("users");
         //final String[] numGames = {"0"};
+        TextView numGames = findViewById(R.id.numGames);
 
         numGamesPlayedRef.addValueEventListener(new ValueEventListener() {
             @Override
@@ -50,6 +51,9 @@ public class MainActivity extends AppCompatActivity {
 
                 //This print statement is here for testing
                 //TODO add to number of games played text view
+                String strNum = Integer.toString(numGames);
+                TextView numGamesL = findViewById(R.id.numGames);
+                numGamesL.setText(strNum);
                 System.out.println(numGames);
             }
 
@@ -69,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 //This print statement is here for testing
-                //TODO integrate in with search function
                 System.out.println(usernames);
             }
 
@@ -120,6 +123,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void gamePlay(View view) {
+        //Get current user
+        String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
+        //Increment game counter
+        TextView numGames = findViewById(R.id.numGames);
+        int num = Integer.parseInt(numGames.getText().toString());
+        num++;
+        mDatabase.child("users").child(userId).child("gamesPlayed").setValue(num);
+
         Intent intent = new Intent(MainActivity.this, GameActivity.class);
         startActivity(intent);
     }
