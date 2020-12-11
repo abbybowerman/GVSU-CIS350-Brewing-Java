@@ -49,4 +49,5 @@ linked to> |
 
 # Software Artifacts
 <Describe the purpose of this section>
+
 * [Kaitlyn's Search Function Use Case Diagram](https://github.com/abbybowerman/GVSU-CIS350-Brewing-Java/blob/master/artifacts/use_case_diagrams/Search%20Function%20Use%20Case%20Diagram.pdf)
