@@ -4,23 +4,38 @@ The purpose of this updated SRS is to layout the additional functional and non-f
 
 ## Functional Requirements
 
-### <Name of Feature 1>
-| ID | Requirement | Test Cases |
-| :-------------: | :----------: | :----------: |
-| FR1 | <Requirement 1> | TC1 |
-| FR2 | <Requirement 2> | TC2 |
-| FR3 | <Requirement 3> | TC1,TC2 |
+### Login Menu
+| ID  | Requirement     | Test Cases  |
+| :-------------:       | :----------:| 
+| FR1 | <Requirement 1> |             |
+| FR2 | <Requirement 2> |             |
+| FR3 | <Requirement 3> |             |
 
-### <Name of Feature 2>
+### Sign-up Menu
 | ID | Requirement | Test Cases |
 | :-------------: | :----------: | :----------: |
 | FR4 | <Requirement 1> | TC1 |
 | FR5 | <Requirement 2> | TBD |
 | FR6 | <Requirement 3> | TC1,TC2 |
 
+### Search
+| ID | Requirement | Test Cases |
+| :-------------: | :----------: | :----------: |
+| FR1 | <Requirement 1> | TC1 |
+| FR2 | <Requirement 2> | TC2 |
+| FR3 | <Requirement 3> | TC1,TC2 |
+
+### 
+| ID | Requirement | Test Cases |
+| :-------------: | :----------: | :----------: |
+| FR4 | <Requirement 1> | TC1 |
+| FR5 | <Requirement 2> | TBD |
+| FR6 | <Requirement 3> | TC1,TC2 |
+
+
 ## Non-Functional Requirements
 
-### <Name of Feature 1>
+### 
 | ID | Requirement | Test Cases |
 | :-------------: | :----------: | :----------: |
 | NFR1 | <Non-Functional Requirement 1> | TC4 |
