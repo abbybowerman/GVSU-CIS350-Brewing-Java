@@ -32,22 +32,67 @@ The purpose of this updated SRS is to layout the additional functional and non-f
 | FR14 | <Requirement 3> | TBD |
 | FR15 | <Requirement 4> | TBD |
 
-### 
+### Swiping function
 | ID | Requirement | Test Cases |
 | :-------------: | :----------: | :----------: |
-| FR4 | <Requirement 1> | TBD |
-| FR5 | <Requirement 2> | TBD |
-| FR6 | <Requirement 3> | TBD |
+| FR16 | <Requirement 1> | TBD |
+| FR17 | <Requirement 2> | TBD |
+| FR18 | <Requirement 3> | TBD |
+| FR19 | <Requirement 2> | TBD |
+| FR20 | <Requirement 3> | TBD |
 
 
 ## Non-Functional Requirements
 
+### Profile page
+| ID | Requirement | Test Cases |
+| :-------------: | :----------: | :----------: |
+| NFR1 | < Non-Functional Requirement 1> | TBD |
+| NFR2 | < Non-Functional Requirement 2> | TBD |
+| NFR3 | < Non-Functional Requirement 3> | TBD |
+| NFR4 | < Non-Functional Requirement 2> | TBD |
+| NFR5 | < Non-Functional Requirement 3> | TBD |
+
 ### 
 | ID | Requirement | Test Cases |
 | :-------------: | :----------: | :----------: |
-| NFR1 | <Non-Functional Requirement 1> | TC4 |
-| NFR2 | < Non-Functional Requirement 2> | TBD |
-| NFR3 | < Non-Functional Requirement 3> | TC6 |
+| NFR6 | < Non-Functional Requirement 1> | TBD |
+| NFR7 | < Non-Functional Requirement 2> | TBD |
+| NFR8 | < Non-Functional Requirement 3> | TBD |
+| NFR9 | < Non-Functional Requirement 2> | TBD |
+| NFR10 | < Non-Functional Requirement 3> | TBD |
+
+### 
+| ID | Requirement | Test Cases |
+| :-------------: | :----------: | :----------: |
+| NFR11 | < Non-Functional Requirement 1> | TBD |
+| NFR12 | < Non-Functional Requirement 2> | TBD |
+| NFR13 | < Non-Functional Requirement 3> | TBD |
+| NFR14 | < Non-Functional Requirement 2> | TBD |
+| NFR15 | < Non-Functional Requirement 3> | TBD |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Test Specification
 <Description of what this section is>
