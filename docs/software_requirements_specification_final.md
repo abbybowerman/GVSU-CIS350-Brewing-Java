@@ -49,4 +49,4 @@ linked to> |
 
 # Software Artifacts
 <Describe the purpose of this section>
-* [I am a link](to_some_file.pdf)
+* [Kaitlyn's Search Function Use Case Diagram](https://github.com/abbybowerman/GVSU-CIS350-Brewing-Java/blob/master/artifacts/use_case_diagrams/Search%20Function%20Use%20Case%20Diagram.pdf)
