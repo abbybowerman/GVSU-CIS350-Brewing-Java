@@ -48,6 +48,9 @@ linked to> |
 (copy/paste the above table a minimum of 5 times)
 
 # Software Artifacts
-<Describe the purpose of this section>
+This section provides a list of the various artifacts and links we have created over the course of this semester to aid in the process of creating, developing, and testing our project.
 
+* [Abby's Sign-up Use Case Diagram](https://github.com/abbybowerman/GVSU-CIS350-Brewing-Java/blob/master/artifacts/use_case_diagrams/SignupUseCase.pdf)
+* [Clare's Login Use Case Diagram](https://github.com/abbybowerman/GVSU-CIS350-Brewing-Java/blob/master/artifacts/use_case_diagrams/use-case_diagram_log-in.pdf)
 * [Kaitlyn's Search Function Use Case Diagram](https://github.com/abbybowerman/GVSU-CIS350-Brewing-Java/blob/master/artifacts/use_case_diagrams/Search%20Function%20Use%20Case%20Diagram.pdf)
+* [High-Level Tasks](https://github.com/abbybowerman/GVSU-CIS350-Brewing-Java/blob/master/docs/High-Level-Tasks.md)
