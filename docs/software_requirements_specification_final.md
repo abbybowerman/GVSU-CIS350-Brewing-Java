@@ -24,23 +24,25 @@ The purpose of this updated SRS is to layout the additional functional and non-f
 | FR10 | The users information should be entered into the database after signing up | TBD |
 | FR11 | The user shall not choose the same username as another user | TBD |
 
-### Search
-| ID | Requirement | Test Cases |
-| :-------------: | :----------: | :----------: |
-| FR11 | <Requirement 1> | TBD |
-| FR12 | <Requirement 2> | TBD |
-| FR13 | <Requirement 3> | TBD |
-| FR14 | <Requirement 3> | TBD |
-| FR15 | <Requirement 4> | TBD |
 
-### Swiping function
+### Home Screen
 | ID | Requirement | Test Cases |
 | :-------------: | :----------: | :----------: |
-| FR16 | <Requirement 1> | TBD |
-| FR17 | <Requirement 2> | TBD |
-| FR18 | <Requirement 3> | TBD |
-| FR19 | <Requirement 2> | TBD |
-| FR20 | <Requirement 3> | TBD |
+| FR12 | The counter shall track how many games users have played | TBD |
+| FR13 | The play button shall take the users to the game screen | TBD |
+| FR14 | The profile button shall take the user to their profile page | TBD |
+| FR15 | The search function shall look up users in the database by username | TBD |
+| FR16 | The logout button shall take users back to the login screen | TBD |
+
+
+### Game Function
+| ID | Requirement | Test Cases |
+| :-------------: | :----------: | :----------: |
+| FR17 | The buttons shall be able to navigate left to dislike and right to like a item | TBD |
+| FR18 | If an item is disliked the item shall be removed from the array list | TBD |
+| FR19 | If an item is liked it should be kept in the array list | TBD |
+| FR20 | The array list shall not have less than 1 item in the list | TBD |
+| FR21 | The item shall be displayed and changed as users play the game | TBD |
 
 
 ## Non-Functional Requirements
@@ -71,28 +73,6 @@ The purpose of this updated SRS is to layout the additional functional and non-f
 | NFR13 | < Non-Functional Requirement 3> | TBD |
 | NFR14 | < Non-Functional Requirement 2> | TBD |
 | NFR15 | < Non-Functional Requirement 3> | TBD |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 # Test Specification
