@@ -7,11 +7,11 @@ The purpose of this updated SRS is to layout the additional functional and non-f
 ### Login Menu
 | ID | Requirement | Test Cases |
 | :-------------: | :----------: | :----------: |
-| FR1 | <Requirement 1> | TBD |
-| FR2 | <Requirement 2> | TBD |
-| FR3 | <Requirement 3> | TBD |
-| FR4 | <Requirement 4> | TBD |
-| FR5 | <Requirement 5> | TBD |
+| FR1 | Shall search for user's username from database to check if valid | TBD |
+| FR2 | Shall search for user's password from database to check if valid | TBD |
+| FR3 | The login button shall take the user to the home screen | TBD |
+| FR4 | The user shall not be directed to homescreen if username and password are notvalid | TBD |
+| FR5 | The sign up button shall take the user to different screen | TBD |
 
 
 ### Sign-up Menu
