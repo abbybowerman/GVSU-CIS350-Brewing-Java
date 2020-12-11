@@ -7,21 +7,22 @@ The purpose of this updated SRS is to layout the additional functional and non-f
 ### Login Menu
 | ID | Requirement | Test Cases |
 | :-------------: | :----------: | :----------: |
-| FR1 | Shall search for user's username from database to check if valid | TBD |
-| FR2 | Shall search for user's password from database to check if valid | TBD |
-| FR3 | The login button shall take the user to the home screen | TBD |
-| FR4 | The user shall not be directed to homescreen if username and password are notvalid | TBD |
-| FR5 | The sign up button shall take the user to different screen | TBD |
+| FR1 | Shall search for user's entered username from database to check if valid | TBD |
+| FR2 | Shall search for user's entered password from database to check if valid | TBD |
+| FR3 | The login button shall take the user to the home screen if user information is valid | TBD |
+| FR4 | The user shall not be directed to homescreen if username and password are not valid | TBD |
+| FR5 | The sign up button shall take the user to the create account screen| TBD |
+| FR6 | Shall require a username and password with each login | TBD |
 
 
 ### Sign-up Menu
 | ID | Requirement | Test Cases |
 | :-------------: | :----------: | :----------: |
-| FR6 | <Requirement 1> | TBD |
-| FR7 | <Requirement 2> | TBD |
-| FR8 | <Requirement 3> | TBD |
-| FR9 | <Requirement 3> | TBD |
-| FR10 | <Requirement 4> | TBD |
+| FR7 | Shall determine if the entered username meets all requirements | TBD |
+| FR8 | Shall determine if the entered password meets all requirements (at least 8 characters, 1 letter, 1 number, and 1 special character) | TBD |
+| FR9 | Shall determine if the re-entered password and original passwords match | TBD |
+| FR10 | The users information should be entered into the database after signing up | TBD |
+| FR11 | The user shall not choose the same username as another user | TBD |
 
 ### Search
 | ID | Requirement | Test Cases |
