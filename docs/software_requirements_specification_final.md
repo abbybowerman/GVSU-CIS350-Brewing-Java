@@ -5,32 +5,39 @@ The purpose of this updated SRS is to layout the additional functional and non-f
 ## Functional Requirements
 
 ### Login Menu
-| ID  | Requirement     | Test Cases  |
-| :-------------:       | :----------:| 
-| FR1 | <Requirement 1> |             |
-| FR2 | <Requirement 2> |             |
-| FR3 | <Requirement 3> |             |
+| ID | Requirement | Test Cases |
+| :-------------: | :----------: | :----------: |
+| FR1 | <Requirement 1> | TBD |
+| FR2 | <Requirement 2> | TBD |
+| FR3 | <Requirement 3> | TBD |
+| FR4 | <Requirement 4> | TBD |
+| FR5 | <Requirement 5> | TBD |
+
 
 ### Sign-up Menu
 | ID | Requirement | Test Cases |
 | :-------------: | :----------: | :----------: |
-| FR4 | <Requirement 1> | TC1 |
-| FR5 | <Requirement 2> | TBD |
-| FR6 | <Requirement 3> | TC1,TC2 |
+| FR6 | <Requirement 1> | TBD |
+| FR7 | <Requirement 2> | TBD |
+| FR8 | <Requirement 3> | TBD |
+| FR9 | <Requirement 3> | TBD |
+| FR10 | <Requirement 4> | TBD |
 
 ### Search
 | ID | Requirement | Test Cases |
 | :-------------: | :----------: | :----------: |
-| FR1 | <Requirement 1> | TC1 |
-| FR2 | <Requirement 2> | TC2 |
-| FR3 | <Requirement 3> | TC1,TC2 |
+| FR11 | <Requirement 1> | TBD |
+| FR12 | <Requirement 2> | TBD |
+| FR13 | <Requirement 3> | TBD |
+| FR14 | <Requirement 3> | TBD |
+| FR15 | <Requirement 4> | TBD |
 
 ### 
 | ID | Requirement | Test Cases |
 | :-------------: | :----------: | :----------: |
-| FR4 | <Requirement 1> | TC1 |
+| FR4 | <Requirement 1> | TBD |
 | FR5 | <Requirement 2> | TBD |
-| FR6 | <Requirement 3> | TC1,TC2 |
+| FR6 | <Requirement 3> | TBD |
 
 
 ## Non-Functional Requirements
