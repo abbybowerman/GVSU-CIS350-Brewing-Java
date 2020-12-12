@@ -67,5 +67,6 @@
     <string name="right">Right</string>
     <string name="option_display">Option Display</string>
     <string name="play">Play</string>
+    <string name="dislike">Dislike</string>
 
 </resources>

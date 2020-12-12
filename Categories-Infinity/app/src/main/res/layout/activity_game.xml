@@ -7,7 +7,7 @@
     android:background="#FBF8F8">
 
     <Button
-        android:id="@+id/Left"
+        android:id="@+id/Dislike"
         android:layout_width="95dp"
         android:layout_height="51dp"
         android:layout_marginStart="80dp"
@@ -20,7 +20,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/Right"
+        android:id="@+id/Like"
         android:layout_width="95dp"
         android:layout_height="51dp"
         android:layout_marginStart="62dp"
@@ -32,7 +32,7 @@
         android:text="@string/right"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/Left" />
+        app:layout_constraintStart_toEndOf="@+id/Dislike" />
 
     <TextView
         android:id="@+id/optionDisplay"
@@ -49,7 +49,7 @@
         android:text="@string/option_display"
         android:textColor="#050505"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/Left"
+        app:layout_constraintBottom_toTopOf="@+id/Dislike"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

@@ -9,8 +9,8 @@ The purpose of this updated SRS is to layout the additional functional and non-f
 | :-------------: | :----------: | :----------: |
 | FR1 | Shall search for user's entered username from database to check if valid | TBD |
 | FR2 | Shall search for user's entered password from database to check if valid | TBD |
-| FR3 | The login button shall take the user to the home screen if user information is valid | TBD |
-| FR4 | The user shall not be directed to homescreen if username and password are not valid | TBD |
+| FR3 | The login button shall take the user to the home screen if user's information is valid | TBD |
+| FR4 | Users shall not be directed to the homescreen if the username and password provided are not valid | TBD |
 | FR5 | The sign up button shall take the user to the create account screen| TBD |
 | FR6 | Shall require a username and password with each login | TBD |
 
@@ -21,16 +21,16 @@ The purpose of this updated SRS is to layout the additional functional and non-f
 | FR7 | Shall determine if the entered username meets all requirements | TBD |
 | FR8 | Shall determine if the entered password meets all requirements (at least 8 characters, 1 letter, 1 number, and 1 special character) | TBD |
 | FR9 | Shall determine if the re-entered password and original passwords match | TBD |
-| FR10 | The users information should be entered into the database after signing up | TBD |
-| FR11 | The user shall not choose the same username as another user | TBD |
+| FR10 | The user's information should be entered into the database after signing up | TBD |
+| FR11 | The user shall not choose the same username as another registered user | TBD |
 
 
 ### Home Screen
 | ID | Requirement | Test Cases |
 | :-------------: | :----------: | :----------: |
 | FR12 | The counter shall track how many games users have played | TBD |
-| FR13 | The play button shall take the users to the game screen | TBD |
-| FR14 | The profile button shall take the user to their profile page | TBD |
+| FR13 | The play button shall take users to the game screen | TBD |
+| FR14 | The profile button shall take users to their profile page | TBD |
 | FR15 | The search function shall look up users in the database by username | TBD |
 | FR16 | The logout button shall take users back to the login screen | TBD |
 
@@ -119,3 +119,6 @@ This section provides a list of the various artifacts and links we have created 
 * [Clare's Login Use Case Diagram](https://github.com/abbybowerman/GVSU-CIS350-Brewing-Java/blob/master/artifacts/use_case_diagrams/use-case_diagram_log-in.pdf)
 * [Kaitlyn's Search Function Use Case Diagram](https://github.com/abbybowerman/GVSU-CIS350-Brewing-Java/blob/master/artifacts/use_case_diagrams/Search%20Function%20Use%20Case%20Diagram.pdf)
 * [High-Level Tasks](https://github.com/abbybowerman/GVSU-CIS350-Brewing-Java/blob/master/docs/High-Level-Tasks.md)
+* [Gnatt Chart](https://github.com/abbybowerman/GVSU-CIS350-Brewing-Java/blob/master/docs/GanttChart.pdf)
+* [Proposal](https://github.com/abbybowerman/GVSU-CIS350-Brewing-Java/blob/master/docs/proposal-template.md)
+* [Midterm Software Requirement Specifications](https://github.com/abbybowerman/GVSU-CIS350-Brewing-Java/blob/master/docs/software_requirements_specification.md)
