@@ -20,6 +20,8 @@
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".MainActivity" />
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCRAI6PWsfcUn5gbkADAVqap1tvsL54veI"/>
 
         <activity
             android:name=".ui.login.LoginScreen"
