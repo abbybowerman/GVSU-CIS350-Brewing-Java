@@ -68,5 +68,6 @@
     <string name="option_display">Option Display</string>
     <string name="play">Play</string>
     <string name="dislike">Dislike</string>
+    <string name="like">Like</string>
 
 </resources>
