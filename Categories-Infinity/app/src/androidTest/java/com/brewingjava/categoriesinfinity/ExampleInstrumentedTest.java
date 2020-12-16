@@ -24,4 +24,7 @@ public class ExampleInstrumentedTest {
 
         assertEquals("com.brewingjava.categoriesinfinity", appContext.getPackageName());
     }
+
+    
+
 }
