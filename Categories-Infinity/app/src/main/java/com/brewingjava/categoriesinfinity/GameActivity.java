@@ -14,6 +14,7 @@ public class GameActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_screen);
 
+        //From a file called Secrets.java containing the api key
         Secrets s = new Secrets();
 
         // Initialize the SDK
