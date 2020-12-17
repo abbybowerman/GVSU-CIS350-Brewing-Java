@@ -9,10 +9,9 @@ The purpose of this updated SRS is to layout the additional functional and non-f
 | :-------------: | :----------: | :----------: |
 | FR1 | Shall search for user's entered username from database to check if valid | TC9 |
 | FR2 | Shall search for user's entered password from database to check if valid | TC9 |
-| FR3 | The login button shall take the user to the home screen if user's information is valid | TBD |
+| FR3 | The login button shall take the user to the home screen if user's information is valid | TC1, TC2 |
 | FR4 | Users shall not be directed to the homescreen if the username and password provided are not valid | TC1 |
-| FR5 | The sign up button shall take the user to the create account screen| TBD |
-| FR6 | Shall require a username and password with each login | TC1 |
+| FR5 | Shall require a username and password with each login | TC1 |
 
 
 ### Sign-up Menu
@@ -21,7 +20,7 @@ The purpose of this updated SRS is to layout the additional functional and non-f
 | FR7 | Shall determine if the entered username meets all requirements | TC2, TC3, TC4 |
 | FR8 | Shall determine if the entered password meets all requirements (at least 8 characters, 1 letter, 1 number, and 1 special character) | TC2, TC3, TC4 |
 | FR9 | Shall determine if the re-entered password and original passwords match | TC4 |
-| FR10 | The user's information should be entered into the database after signing up | TBD |
+| FR10 | The user's information should be entered into the database after signing up | TC5 |
 | FR11 | The user shall not choose the same username as another registered user | TBD |
 
 
@@ -29,8 +28,8 @@ The purpose of this updated SRS is to layout the additional functional and non-f
 | ID | Requirement | Test Cases |
 | :-------------: | :----------: | :----------: |
 | FR12 | The counter shall track how many games users have played | TC5 |
-| FR13 | The play button shall take users to the game screen | TBD |
-| FR14 | The profile button shall take users to their profile page | TBD |
+| FR13 | The play button shall take users to the game screen | TC3 |
+| FR14 | The profile button shall take users to their profile page | TC4 |
 | FR15 | The search function shall look up users in the database by username | TC6, TC7 |
 | FR16 | The logout button shall take users back to the login screen | TC8 |
 
@@ -81,7 +80,7 @@ The purpose of this section is to list our unit tests, integration tests and sys
 ## Unit tests
 | ID | Description | Steps | Input Values | Expected Output | Actual Output | Pass/Fail | Requirement Link |
 | :-------------: | :----------: | :----------: | :----------: | :----------:| :----------: | :----------: | :----------: |
-| TC1 | Require a username and password with each login | Attempt to login without credentials | empty strings in username and password | Toast saying invalid username/password | <actual output of test case> | <did it pass or fail?> | FR4, FR6 |
+| TC1 | Require a username and password with each login | Attempt to login without credentials | empty strings in username and password | Toast saying invalid username/password | <actual output of test case> | <did it pass or fail?> | FR4, FR5 |
 | TC2 | User has valid username but invalid password | create a valid username and an invalid password | valid string for username, invalid string for password | Toast saying Password must contain 1 uppercase, 1 letter, 1 number and 1 special character | <actual output of test case> | <did it pass or fail?> | FR7, FR8 |
 | TC3 | User has invalid username but valid password | Create invalid username and valid passwords | Empty string for username, valid string for password | Toast saying username must be at least one character | <actual output of test case> | <did it pass or fail?> | FR7, FR8 |
 | TC4 | Valid username and password but passwords don't match | Create a valid username and two valid unidentical passowrds | String for username, string for entered password, different string for verified passowrd | Toast saying passwords must match | <actual output of test case> | <did it pass or fail?> | FR7, FR8, FR9 |
@@ -96,11 +95,11 @@ The purpose of this section is to list our unit tests, integration tests and sys
 ## Integration tests
 | ID | Description | Steps | Input Values | Expected Output | Actual Output | Pass/Fail | Requirement Link |
 | :-------------: | :----------: | :----------: | :----------: | :----------:| :----------: | :----------: | :----------: |
-| TC1 | <TC1 description> | <steps to execute TC1> | <input values to this test case> | <expected output as a result of test case> | <actual output of test case> | <did it pass or fail?> | <requirement IDs this test case is linked to> |
-| TC2 | <TC1 description> | <steps to execute TC1> | <input values to this test case> | <expected output as a result of test case> | <actual output of test case> | <did it pass or fail?> | <requirement IDs this test case is linked to> |
-| TC3 | <TC1 description> | <steps to execute TC1> | <input values to this test case> | <expected output as a result of test case> | <actual output of test case> | <did it pass or fail?> | <requirement IDs this test case is linked to> |
-| TC4 | <TC1 description> | <steps to execute TC1> | <input values to this test case> | <expected output as a result of test case> | <actual output of test case> | <did it pass or fail?> | <requirement IDs this test case is linked to> |
-| TC5 | <TC1 description> | <steps to execute TC1> | <input values to this test case> | <expected output as a result of test case> | <actual output of test case> | <did it pass or fail?> | <requirement IDs this test case is linked to> |
+| TC1 | Login page should only take user to homescreen if provided credentials are vaild | Attempt to login with invalid credentials | Credentials not stored in database | Message will be displayed that the credentials are invalid | <actual output of test case> | <did it pass or fail?> | FR3 |
+| TC2 | Login page should take user to home page | Attempt to login with valid credentials | Credentials stored in the database | User will be taken to their homescreen | <actual output of test case> | <did it pass or fail?> | FR5 |
+| TC3 | Play button when pressed should initiate a new game | Pressing the play button should initiate a transition to the game screen | User selects the play button | Game play screen will be displayed | <actual output of test case> | <did it pass or fail?> | FR13 |
+| TC4 | Profile button when pressed should transition to the users profile page | Pressing the profile button should transition to the users profile page | User selects the profile button | Only users profile page will be displayed | <actual output of test case> | <did it pass or fail?> | FR14 |
+| TC5 | When the user signs up for the first time their information is entered into the database| User provides a valid username, password, and reconfirms password | Username and password provided | That username will be entered into the database and users should be able that user | <actual output of test case> | <did it pass or fail?> | FR10 |
 
 ## System tests
 | ID | Description | Steps | Input Values | Expected Output | Actual Output | Pass/Fail | Requirement Link |
