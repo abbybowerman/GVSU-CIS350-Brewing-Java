@@ -26,5 +26,7 @@ Our product is a movie, restaurants, or any category of your selection decision 
 
 3. Login or create a profile 
 
-4. Start playing the game 
+4. Press the play button 
+
+5. Start playing the game 
 
