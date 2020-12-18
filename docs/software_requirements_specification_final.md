@@ -49,11 +49,11 @@ The purpose of this updated SRS is to layout the additional functional and non-f
 ### Layout
 | ID | Requirement | Test Cases |
 | :-------------: | :----------: | :----------: |
-| NFR1 | < Non-Functional Requirement 1> | TBD |
-| NFR2 | < Non-Functional Requirement 2> | TBD |
-| NFR3 | < Non-Functional Requirement 3> | TBD |
-| NFR4 | < Non-Functional Requirement 2> | TBD |
-| NFR5 | < Non-Functional Requirement 3> | TBD |
+| NFR1 | The app shall have a cohesive background, color, and style | TBD |
+| NFR2 | The text shall be easy to read for all users | TBD |
+| NFR3 | The profile page shall contain only the users information | TBD |
+| NFR4 | The home screen shall be the first page users see after logging in | TBD |
+| NFR5 | The homescreen shall contain data specific to each user | TBD |
 
 ### Storage
 | ID | Requirement | Test Cases |
