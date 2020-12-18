@@ -58,11 +58,11 @@ The purpose of this updated SRS is to layout the additional functional and non-f
 ### Storage
 | ID | Requirement | Test Cases |
 | :-------------: | :----------: | :----------: |
-| NFR6 | < Non-Functional Requirement 1> | TBD |
-| NFR7 | < Non-Functional Requirement 2> | TBD |
-| NFR8 | < Non-Functional Requirement 3> | TBD |
-| NFR9 | < Non-Functional Requirement 2> | TBD |
-| NFR10 | < Non-Functional Requirement 3> | TBD |
+| NFR6 | The database shall be able to adapt to added data of users as time progresses | TBD |
+| NFR7 | There shall not be duplicate information for one specific user stored in the database | TBD |
+| NFR8 | Users shall not be able to access the stored data | TBD |
+| NFR9 | Database shall contain users name, username, and password | TBD |
+| NFR10 | The information stored in the database shall be able to be edited by users | TBD |
 
 ### Security
 | ID | Requirement | Test Cases |
