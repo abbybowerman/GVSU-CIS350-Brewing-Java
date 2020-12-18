@@ -60,18 +60,18 @@ The purpose of this updated SRS is to layout the additional functional and non-f
 | :-------------: | :----------: | :----------: |
 | NFR6 | The database shall be able to adapt to added data of users as time progresses | TBD |
 | NFR7 | There shall not be duplicate information for one specific user stored in the database | TBD |
-| NFR8 | Users shall not be able to access the stored data | TBD |
+| NFR8 | Database shall not delete users if capacity is reached | TBD |
 | NFR9 | Database shall contain users name, username, and password | TBD |
 | NFR10 | The information stored in the database shall be able to be edited by users | TBD |
 
 ### Security
 | ID | Requirement | Test Cases |
 | :-------------: | :----------: | :----------: |
-| NFR11 | < Non-Functional Requirement 1> | TBD |
-| NFR12 | < Non-Functional Requirement 2> | TBD |
-| NFR13 | < Non-Functional Requirement 3> | TBD |
-| NFR14 | < Non-Functional Requirement 2> | TBD |
-| NFR15 | < Non-Functional Requirement 3> | TBD |
+| NFR11 | The developers shall only be able to see all user details | TBD |
+| NFR12 | users shall not be able to collaborate with users they do not follow | TBD |
+| NFR13 | Users shall only be able to edit their information stored by the database | TBD |
+| NFR14 | Users shall not be able to see or access all stored data | TBD |
+| NFR15 | Valid credentials shall be required with every login | TBD |
 
 
 # Test Specification
