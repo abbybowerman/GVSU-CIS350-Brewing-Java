@@ -49,7 +49,7 @@ The purpose of this updated SRS is to layout the additional functional and non-f
 ### Layout
 | ID | Requirement | Test Cases |
 | :-------------: | :----------: | :----------: |
-| NFR1 | The app shall have a cohesive background, color, and style | TBD |
+| NFR1 | The app shall have a cohesive background, color, and style | TC2, TC3 |
 | NFR2 | The text shall be easy to read for all users | TBD |
 | NFR3 | The profile page shall contain only the users information | TBD |
 | NFR4 | The home screen shall be the first page users see after logging in | TC2 |
@@ -104,10 +104,10 @@ The purpose of this section is to list our unit tests, integration tests and sys
 ## System tests
 | ID | Description | Steps | Input Values | Expected Output | Actual Output | Pass/Fail | Requirement Link |
 | :-------------: | :----------: | :----------: | :----------: | :----------:| :----------: | :----------: | :----------: |
-| TC1 | System should only only allow login with correct password for username | Try to login to known users account with wrong password | Valid username and invalid password | System should deny access to account | System denies access to account and displays an error message | Pass | FR2 |
-| TC2 | The application should work with all Android emulators | Install the application on several mobile Android emulators | Install app on Pixel 4, Pixel 2, Nexus 4, 8" Foldable | App should function on all emulators | App functioned on multiple emulators | Pass | TBD |
-| TC3 | Application should perform fast and smoothly | Inspect CPU activity with CPU Profiler | Run CPU Profiler while app runs | Green, yellow, or gray coloring to signify CPU performance | App ran smoothly and CPU usage was satisfactory | Pass | TBD |
-| TC4 | Sysytem should store users username, password, and games played | Check that database is saving user data | Create account on app | Database should habe information stored | Database contains data that was to be stored | Pass | NFR9, NFR11 |
+| TC1 | System should only allow login with correct password for username | Try to login to known users account with wrong password | Valid username and invalid password | System should deny access to account | System denies access to account and displays an error message | Pass | FR2 |
+| TC2 | The application should work with all Android emulators | Install the application on several mobile Android emulators | Install app on Pixel 4, Pixel 2, Nexus 4, 8" Foldable | App should function on all emulators | App functioned on multiple emulators | Pass | NFR1 |
+| TC3 | Application should perform fast and smoothly | Inspect CPU activity with CPU Profiler | Run CPU Profiler while app runs | Green, yellow, or gray coloring to signify CPU performance | App ran smoothly and CPU usage was satisfactory | Pass | NFR1 |
+| TC4 | System should store users username, password, and games played | Check that database is saving user data | Create account on app | Database should have information stored | Database contains data that was to be stored | Pass | NFR9, NFR11 |
 | TC5 | Application should have proper usability in all buttons | Check that all buttons are usable | All buttons in the app | Buttons should do the tasks they are assigned | All buttons except the game buttons function properly | Passed usability test on all buttons except game buttons | FR3, FR13, FR14, FR16 |
 
 
