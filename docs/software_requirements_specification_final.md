@@ -8,8 +8,8 @@ The purpose of this updated SRS is to layout the additional functional and non-f
 | ID | Requirement | Test Cases |
 | :-------------: | :----------: | :----------: |
 | FR1 | Shall search for user's entered username from database to check if valid | TC9 |
-| FR2 | Shall search for user's entered password from database to check if valid | TC9 |
-| FR3 | The login button shall take the user to the home screen if user's information is valid | TC1, TC2 |
+| FR2 | Shall search for user's entered password from database to check if valid | TC9, TC1 |
+| FR3 | The login button shall take the user to the home screen if user's information is valid | TC1, TC2, TC5 |
 | FR4 | Users shall not be directed to the homescreen if the username and password provided are not valid | TC1 |
 | FR5 | Shall require a username and password with each login | TC1 |
 
@@ -28,10 +28,10 @@ The purpose of this updated SRS is to layout the additional functional and non-f
 | ID | Requirement | Test Cases |
 | :-------------: | :----------: | :----------: |
 | FR12 | The counter shall track how many games users have played | TC5 |
-| FR13 | The play button shall take users to the game screen | TC3 |
-| FR14 | The profile button shall take users to their profile page | TC4 |
+| FR13 | The play button shall take users to the game screen | TC3, TC5 |
+| FR14 | The profile button shall take users to their profile page | TC4, TC5 |
 | FR15 | The search function shall look up users in the database by username | TC6, TC7 |
-| FR16 | The logout button shall take users back to the login screen | TC8 |
+| FR16 | The logout button shall take users back to the login screen | TC8, TC5 |
 
 
 ### Game Function
@@ -61,13 +61,13 @@ The purpose of this updated SRS is to layout the additional functional and non-f
 | NFR6 | The database shall be able to adapt to added data of users as time progresses | TC5 |
 | NFR7 | There shall not be duplicate information for one specific user stored in the database | TBD |
 | NFR8 | Database shall not delete users if capacity is reached | TBD |
-| NFR9 | Database shall contain users name, username, and password | TBD |
+| NFR9 | Database shall contain users name, username, and password | TC4 |
 | NFR10 | The information stored in the database shall be able to be edited by users | TBD |
 
 ### Security
 | ID | Requirement | Test Cases |
 | :-------------: | :----------: | :----------: |
-| NFR11 | The developers shall only be able to see all user details | TBD |
+| NFR11 | The developers shall only be able to see all user details | TC4 |
 | NFR12 | users shall not be able to collaborate with users they do not follow | TBD |
 | NFR13 | Users shall only be able to edit their information stored by the database | TBD |
 | NFR14 | Users shall not be able to see or access all stored data | TBD |
@@ -104,14 +104,15 @@ The purpose of this section is to list our unit tests, integration tests and sys
 ## System tests
 | ID | Description | Steps | Input Values | Expected Output | Actual Output | Pass/Fail | Requirement Link |
 | :-------------: | :----------: | :----------: | :----------: | :----------:| :----------: | :----------: | :----------: |
-| TC1 | <TC1 description> | <steps to execute TC1> | <input values to this test case> | <expected output as a result of test case> | <actual output of test case> | <did it pass or fail?> | <requirement IDs this test case is linked to> |
-| TC2 | <TC1 description> | <steps to execute TC1> | <input values to this test case> | <expected output as a result of test case> | <actual output of test case> | <did it pass or fail?> | <requirement IDs this test case is linked to> |
-| TC3 | <TC1 description> | <steps to execute TC1> | <input values to this test case> | <expected output as a result of test case> | <actual output of test case> | <did it pass or fail?> | <requirement IDs this test case is linked to> |
-| TC4 | <TC1 description> | <steps to execute TC1> | <input values to this test case> | <expected output as a result of test case> | <actual output of test case> | <did it pass or fail?> | <requirement IDs this test case is linked to> |
-| TC5 | <TC1 description> | <steps to execute TC1> | <input values to this test case> | <expected output as a result of test case> | <actual output of test case> | <did it pass or fail?> | <requirement IDs this test case is linked to> |
+| TC1 | System should only only allow login with correct password for username | Try to login to known users account with wrong password | Valid username and invalid password | System should deny access to account | System denies access to account and displays an error message | Pass | FR2 |
+| TC2 | The application should work with all Android emulators | Install the application on several mobile Android emulators | Install app on Pixel 4, Pixel 2, Nexus 4, 8" Foldable | App should function on all emulators | App functioned on multiple emulators | Pass | TBD |
+| TC3 | Application should perform fast and smoothly | Inspect CPU activity with CPU Profiler | Run CPU Profiler while app runs | Green, yellow, or gray coloring to signify CPU performance | App ran smoothly and CPU usage was satisfactory | Pass | TBD |
+| TC4 | Sysytem should store users username, password, and games played | Check that database is saving user data | Create account on app | Database should habe information stored | Database contains data that was to be stored | Pass | NFR9, NFR11 |
+| TC5 | Application should have proper usability in all buttons | Check that all buttons are usable | All buttons in the app | Buttons should do the tasks they are assigned | All buttons except the game buttons function properly | Passed usability test on all buttons except game buttons | FR3, FR13, FR14, FR16 |
 
 
 # Software Artifacts
+
 This section provides a list of the various artifacts and links we have created over the course of this semester to aid in the process of creating, developing, and testing our project.
 
 * [Abby's Sign-up Use Case Diagram](https://github.com/abbybowerman/GVSU-CIS350-Brewing-Java/blob/master/artifacts/use_case_diagrams/SignupUseCase.pdf)
